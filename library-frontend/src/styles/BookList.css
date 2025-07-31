@@ -1,0 +1,45 @@
+.booklist-background {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 50px;
+  position: relative;
+}
+
+.booklist-background::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.table {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table-bordered th, 
+.table-bordered td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
